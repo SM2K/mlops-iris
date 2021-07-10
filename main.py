@@ -39,12 +39,12 @@ def ping():
     return {"ping": "pong", "timestamp": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}
 @app.get("/alpha")
 # Healthcheck route to ensure that the API is up and running
-def kuts():
+def alpha():
     return {"alpha": "This is Shashank" , "timestamp": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}
 
 @app.get("/beta")
 # Healthcheck route to ensure that the API is up and running
-def group():
+def beta():
     return {"beta": "The Beta Group Rocks" , "timestamp": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}
  
 

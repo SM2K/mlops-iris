@@ -37,5 +37,5 @@ def test_beta():
         response = client.get("/beta")
         # asserting the correct response is received
         
-assert response.status_code == 200
+        assert response.status_code == 200
         assert response.json() == {"beta": "The Beta Group Rocks" , "timestamp": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}
